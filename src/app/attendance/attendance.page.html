@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Attendance</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div padding>
+      <div style="text-align: center">
+        <ion-button shape="round" color="success"(click)="capture(true)" style="    width: 80%;
+        height: 165px;
+        margin-top: 30px;
+        font-size: 35px;" >In-Time</ion-button>
+      </div>
+    </div>
+    <div padding>
+      <div style="text-align: center">
+        <ion-button shape="round" color="danger" (click)="capture(false)" style="    width: 80%;
+        height: 165px;
+        margin-top: 55px;font-size: 35px;" >Out-Time</ion-button>
+      </div>
+    </div>
+</ion-content>

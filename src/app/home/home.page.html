@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="mail" style="zoom:1.3"></ion-icon>
+        <!-- <ion-icon  name="mail-unread-outline" style="zoom:1.3"></ion-icon> -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content>
+    <div class="coverpic_background" [ngStyle]="{'background-image': 'url(' + background + ')'}"
+      style="border-radius: 0px 0px 40px 40px;">
+      <div id="overlay1" style="color:white;text-align: center;">
+        <!-- <h3 style="font-weight: bold;color: linear-gradient(to left, #348285, #54588b);padding: 15px;font-style: italic;">Welcome to Logicwits</h3> -->
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <ion-grid class="home-menu">
+        <ion-row>
+          <ion-col size="6" text-center *ngFor="let mg of managements" (click)="goToPage(mg.url)">
+            <ion-card mode="ios">
+              <img [src]="mg.icon">
+              <ion-label>
+                <h2 style="color: darkslategrey;
+                font-size: 22px;" text-wrap> {{mg.name}}</h2>
+              </ion-label>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-content>
+</ion-content>

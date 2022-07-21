@@ -1,0 +1,20 @@
+<!-- <div class="container">
+    <img src="/assets/imgs/check.gif">
+    <p>Hi!! revathy</p>
+</div> -->
+<ion-row *ngIf="code == 200">
+    <ion-col>
+        <p style="text-align: center;">{{message}}</p>
+        <img style="height: 140px;margin-left: 30px;" src="/assets/icon/tick.png">
+    </ion-col>
+</ion-row>
+
+<ion-row *ngIf="code == 404">
+    <ion-col>
+        <p style="text-align: center;">{{message}}</p>
+        <img style="height: 140px;margin-left: 30px;" src="/assets/icon/cancel.png">
+    </ion-col>
+</ion-row>
+
+
+
